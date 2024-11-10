@@ -6,7 +6,8 @@ float roll, pitch, yaw;
 void setup() {
   Serial2.begin(115200);
 }
-
+void loop(){
+}
 void Event() {
   while (Serial2.available()) {
     Re_buf[counter] = (unsigned char)Serial2.read();
